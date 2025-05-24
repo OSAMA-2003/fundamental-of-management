@@ -418,7 +418,7 @@ export const chapters: ChapterData[] = [
         "When the lower-level managers are not capable of making decisions.",
         "When the decisions to be made are not significant.",
         "When the company is large."
-      ], correctAnswer: 3 },
+      ], correctAnswer: 0 },
 
       { id: "4-22", text: "______ refers to how standardized an organization's jobs are and the extent to which employee behavior is guided by rules and procedures.", type: "multiplechoice", options: [
         "Specialization", "Centralization",
