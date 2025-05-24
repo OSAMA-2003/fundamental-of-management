@@ -80,7 +80,8 @@ function App() {
           rel="noopener noreferrer" 
           className="text-blue-100 hover:text-white transition-colors duration-200"
         >
-          Made By ENG: OSAMA
+                    Made By ENG:<span className=' font-bold font-sans underline '>OSAMA</span>
+
         </a>
       </footer>
     </div>
