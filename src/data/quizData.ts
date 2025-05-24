@@ -264,7 +264,7 @@ export const chapters: ChapterData[] = [
 
   { id: "3-30", text: "Long-term plans are defined as those with a time frame beyond ______.", type: "multiplechoice", options: [
     "seven years", "one year", "five years", "three years"
-  ], correctAnswer: 2 },
+  ], correctAnswer: 3 },
 
   { id: "3-31", text: "Short-term plans are those covering ______ or less.", type: "multiplechoice", options: [
     "three years", "one year", "six months", "five years"
@@ -277,7 +277,7 @@ export const chapters: ChapterData[] = [
   { id: "3-33", text: "Todd Miller, CEO of Miller's Grocery, has determined that all stores should be well maintained both inside and out. This is an example of a ______.", type: "multiplechoice", options: [
     "directional plan", "specific plan",
     "financial goal", "social goal"
-  ], correctAnswer: 1 },
+  ], correctAnswer: 0 },
 
   { id: "3-34", text: "A standing plan is ______.", type: "multiplechoice", options: [
     "an ongoing plan that provides guidance for activities performed repeatedly",
@@ -298,7 +298,7 @@ export const chapters: ChapterData[] = [
     "directional; standing",
     "short-term; directional",
     "general; informal"
-  ], correctAnswer: 2 },
+  ], correctAnswer: 0 },
 
   { id: "3-37", text: "The commitment concept says that plans should ______.", type: "multiplechoice", options: [
     "extend far enough to meet those commitments made when the plans were developed",
