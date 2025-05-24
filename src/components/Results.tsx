@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Award, RefreshCw, BookOpen } from 'lucide-react';
+import { Award, BookOpen } from 'lucide-react';
 import { Question } from '../types';
 
 interface ResultsProps {
@@ -14,7 +14,6 @@ interface ResultsProps {
 const Results: React.FC<ResultsProps> = ({ 
   score, 
   totalQuestions, 
-  onRetake, 
   questions,
   userAnswers 
 }) => {
@@ -93,15 +92,7 @@ const Results: React.FC<ResultsProps> = ({
         
         <div className="p-6">
           <div className="flex flex-col sm:flex-row gap-4 mb-6">
-            <motion.button
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-              onClick={onRetake}
-              className="flex-1 py-3 px-6 bg-blue-500 text-white font-semibold rounded-lg flex items-center justify-center"
-            >
-              <RefreshCw className="w-5 h-5 mr-2" />
-              Retake Quiz
-            </motion.button>
+            
             <motion.button
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
