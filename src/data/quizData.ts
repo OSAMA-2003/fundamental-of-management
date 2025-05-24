@@ -262,7 +262,7 @@ export const chapters: ChapterData[] = [
 
       { id: "3-30", text: "Long-term plans are defined as those with a time frame beyond ______.", type: "multiplechoice", options: [
         "seven years", "one year", "five years", "three years"
-      ], correctAnswer: 2 },
+      ], correctAnswer: 3 },
 
       { id: "3-31", text: "Short-term plans are those covering ______ or less.", type: "multiplechoice", options: [
         "three years", "one year", "six months", "five years"
