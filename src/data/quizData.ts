@@ -165,119 +165,181 @@ export const chapters: ChapterData[] = [
       ], correctAnswer: 1 }
     ]
   },
+
+
   {
     id: 3,
     title: "Chapter 3: Planning",
     questions: [
-      // True/False Questions (55-71)
-      { id: "3-1", text: "Planning is concerned with how objectives are to be accomplished, not what is to be accomplished.", type: "truefalse", correctAnswer: "false" },
-      { id: "3-2", text: "Planning provides direction to managers and non-managers alike.", type: "truefalse", correctAnswer: "true" },
-      { id: "3-3", text: "The presence of planning inhibits the ability of departments and individuals to work together or organizations to move.", type: "truefalse", correctAnswer: "false" },
-      { id: "3-4", text: "Planning helps managers eliminate uncertainty and insulates organizations from change.", type: "truefalse", correctAnswer: "false" },
-      { id: "3-5", text: "Several research studies have conclusively proven that planning organizations always outperform non-planning organizations.", type: "truefalse", correctAnswer: "false" },
-      { id: "3-6", text: "Studies indicate that doing a good job planning and implementing those plans play a bigger part in high performance than does how much planning is done.", type: "truefalse", correctAnswer: "true" },
-      { id: "3-7", text: "The number of years used to define short-term and long-term plans has increased considerably because of the greater environmental certainty businesses have today.", type: "truefalse", correctAnswer: "false" },
-      { id: "3-8", text: "Long-term plans are those with a time frame beyond five years.", type: "truefalse", correctAnswer: "true" },
-      { id: "3-9", text: "Short-term plans are those covering one year or less.", type: "truefalse", correctAnswer: "true" },
-      { id: "3-10", text: "When uncertainty is high and managers must be flexible in order to respond to unexpected changes, directional plans are preferable.", type: "truefalse", correctAnswer: "true" },
-      { id: "3-11", text: "Directional plans are clearly defined and leave no room for interpretation.", type: "truefalse", correctAnswer: "false" },
-      { id: "3-12", text: "The standard procedure to be followed by the human resources department of a company when initiating disciplinary action against an employee is an example of a standing plan.", type: "truefalse", correctAnswer: "true" },
-      { id: "3-13", text: "As managers plan, they develop both goals and plans.", type: "truefalse", correctAnswer: "true" },
-      { id: "3-14", text: "Most businesses have only the single goal of making profits.", type: "truefalse", correctAnswer: "false" },
-      { id: "3-15", text: "Strategic goals focus exclusively on the financial performance of the organization.", type: "truefalse", correctAnswer: "false" },
-      { id: "3-16", text: "Stated goals are those that an organization pursues.", type: "truefalse", correctAnswer: "false" },
-      { id: "3-17", text: "Firms can monitor, and potentially influence, proposed legislative and political changes using lobbyists.", type: "truefalse", correctAnswer: "true" },
+  // True/False Questions (1-17)
+  { id: "3-1", text: "Planning is concerned with how objectives are to be accomplished, not what is to be accomplished.", type: "truefalse", correctAnswer: "false" },
+  { id: "3-2", text: "Planning provides direction to managers and non-managers alike.", type: "truefalse", correctAnswer: "true" },
+  { id: "3-3", text: "The presence of planning inhibits the ability of departments and individuals to work together or organizations to move.", type: "truefalse", correctAnswer: "false" },
+  { id: "3-4", text: "Planning helps managers eliminate uncertainty and insulates organizations from change.", type: "truefalse", correctAnswer: "false" },
+  { id: "3-5", text: "Several research studies have conclusively proven that planning organizations always outperform non-planning organizations.", type: "truefalse", correctAnswer: "false" },
+  { id: "3-6", text: "Studies indicate that doing a good job planning and implementing those plans play a bigger part in high performance than does how much planning is done.", type: "truefalse", correctAnswer: "true" },
+  { id: "3-7", text: "The number of years used to define short-term and long-term plans has increased considerably because of the greater environmental certainty businesses have today.", type: "truefalse", correctAnswer: "false" },
+  { id: "3-8", text: "Long-term plans are those with a time frame beyond five years.", type: "truefalse", correctAnswer: "true" },
+  { id: "3-9", text: "Short-term plans are those covering one year or less.", type: "truefalse", correctAnswer: "true" },
+  { id: "3-10", text: "When uncertainty is high and managers must be flexible in order to respond to unexpected changes, directional plans are preferable.", type: "truefalse", correctAnswer: "true" },
+  { id: "3-11", text: "Directional plans are clearly defined and leave no room for interpretation.", type: "truefalse", correctAnswer: "false" },
+  { id: "3-12", text: "The standard procedure to be followed by the human resources department of a company when initiating disciplinary action against an employee is an example of a standing plan.", type: "truefalse", correctAnswer: "true" },
+  { id: "3-13", text: "As managers plan, they develop both goals and plans.", type: "truefalse", correctAnswer: "true" },
+  { id: "3-14", text: "Most businesses have only the single goal of making profits.", type: "truefalse", correctAnswer: "false" },
+  { id: "3-15", text: "Strategic goals focus exclusively on the financial performance of the organization.", type: "truefalse", correctAnswer: "false" },
+  { id: "3-16", text: "Stated goals are those that an organization pursues.", type: "truefalse", correctAnswer: "false" },
+  { id: "3-17", text: "Firms can monitor, and potentially influence, proposed legislative and political changes using lobbyists.", type: "truefalse", correctAnswer: "true" },
 
-      // Multiple Choice Questions (72-86)
-      { id: "3-18", text: "______ involves defining the organization's goals, establishing strategies for achieving those goals, and developing plans to integrate and coordinate work activities.", type: "multiplechoice", options: [
-        "Execution", "Logistics", "Planning", "Operations"
-      ], correctAnswer: 2 },
+  // Multiple Choice Questions (18-39)
+  { id: "3-18", text: "______ involves defining the organization's goals, establishing strategies for achieving those goals, and developing plans to integrate and coordinate work activities.", type: "multiplechoice", options: [
+    "Execution", "Logistics", "Planning", "Operations"
+  ], correctAnswer: 2 },
+  
+  { id: "3-19", text: "The effect of planning on managers is that it forces them to ______.", type: "multiplechoice", options: [
+    "generate higher profits", "anticipate and respond to change",
+    "eliminate uncertainty", "work at cross purposes"
+  ], correctAnswer: 1 },
 
-      { id: "3-19", text: "The effect of planning on managers is that it forces them to ______.", type: "multiplechoice", options: [
-        "generate higher profits", "anticipate and respond to change",
-        "eliminate uncertainty", "work at cross purposes"
-      ], correctAnswer: 1 },
+  { id: "3-20", text: "Which one of the following is among the reasons why managers should plan?", type: "multiplechoice", options: [
+    "When work activities are coordinated around plans, inefficiencies become obvious.",
+    "Uncertainty can be eliminated, and the organization can be insulated from change with planning.",
+    "Planning eliminates the need to set goals.",
+    "Planning eliminates the need to measure work effort."
+  ], correctAnswer: 0 },
 
-      { id: "3-20", text: "Which one of the following is among the reasons why managers should plan?", type: "multiplechoice", options: [
-        "When work activities are coordinated around plans, inefficiencies become obvious.",
-        "Uncertainty can be eliminated, and the organization can be insulated from change with planning.",
-        "Planning eliminates the need to set goals.",
-        "Planning eliminates the need to measure work effort."
-      ], correctAnswer: 0 },
+  { id: "3-21", text: "Which one of the following is true of the impact of formal planning on organizational performance?", type: "multiplechoice", options: [
+    "Formal planning is associated with positive financial results.",
+    "Organizations that formally plan invariably outperform those that don't plan.",
+    "The amount of planning done is more important to high performance than the quality of planning and implementation.",
+    "Companies can start seeing the impact of formal planning on performance about a year after starting the planning process."
+  ], correctAnswer: 0 },
 
-      { id: "3-21", text: "Which one of the following is true of the impact of formal planning on organizational performance?", type: "multiplechoice", options: [
-        "Formal planning is associated with positive financial results.",
-        "Organizations that formally plan invariably outperform those that don't plan.",
-        "The amount of planning done is more important to high performance than the quality of planning and implementation.",
-        "Companies can start seeing the impact of formal planning on performance about a year after starting the planning process."
-      ], correctAnswer: 0 },
+  { id: "3-22", text: "Most companies' plans can be classified as either ______ or ______.", type: "multiplechoice", options: [
+    "strategic; financial", "operational; tactical",
+    "social; economic", "strategic; operational"
+  ], correctAnswer: 3 },
 
-      { id: "3-22", text: "Most companies' plans can be classified as either ______ or ______.", type: "multiplechoice", options: [
-        "strategic; financial", "operational; tactical",
-        "social; economic", "strategic; operational"
-      ], correctAnswer: 3 },
+  { id: "3-23", text: "When formal planning fails to lead to higher performance, which one of the following is most likely to be the reason for the failure?", type: "multiplechoice", options: [
+    "A participative style of planning was used.",
+    "Managers were allowed too much autonomy.",
+    "The company emphasized the control function over other functions.",
+    "External forces constrain managers' options"
+  ], correctAnswer: 3 },
 
-      { id: "3-23", text: "When formal planning fails to lead to higher performance, which one of the following is most likely to be the reason for the failure?", type: "multiplechoice", options: [
-        "A participative style of planning was used.",
-        "Managers were allowed too much autonomy.",
-        "The company emphasized the control function over other functions.",
-        "External forces constrain managers' options"
-      ], correctAnswer: 3 },
+  { id: "3-24", text: "Goals are different from plans because ______.", type: "multiplechoice", options: [
+    "goals identify specific steps that the organization needs to achieve, and plans identify the overall mission of the organization",
+    "goals describe financial objectives, and plans describe objectives related to social responsibility",
+    "goals are important only for small companies, and plans are important only for large companies",
+    "goals are desired outcomes, and plans describe how those outcomes will be accomplished"
+  ], correctAnswer: 3 },
 
-      { id: "3-24", text: "Goals are different from plans because ______.", type: "multiplechoice", options: [
-        "goals identify specific steps that the organization needs to achieve, and plans identify the overall mission of the organization",
-        "goals describe financial objectives, and plans describe objectives related to social responsibility",
-        "goals are important only for small companies, and plans are important only for large companies",
-        "goals are desired outcomes, and plans describe how those outcomes will be accomplished"
-      ], correctAnswer: 3 },
+  { id: "3-25", text: "Which one of the following statements is true regarding an organization's plans?", type: "multiplechoice", options: [
+    "Plans can differ based on time frame.",
+    "Almost all plans are strategic plans.",
+    "Strategic plans may result in unethical behaviors by employees.",
+    "Long-term success is ensured if managers emphasize operational plans."
+  ], correctAnswer: 0 },
 
-      { id: "3-25", text: "Which one of the following statements is true regarding an organization's plans?", type: "multiplechoice", options: [
-        "Plans can differ based on time frame.",
-        "Almost all plans are strategic plans.",
-        "Strategic plans may result in unethical behaviors by employees.",
-        "Long-term success is ensured if managers emphasize operational plans."
-      ], correctAnswer: 0 },
+  { id: "3-26", text: "Strategic plans are usually ______.", type: "multiplechoice", options: [
+    "short term, directional, and standing",
+    "short term, specific, and standing",
+    "long term, directional, and single use",
+    "long term, specific, and standing"
+  ], correctAnswer: 2 },
 
-      { id: "3-26", text: "Strategic plans are usually ______.", type: "multiplechoice", options: [
-        "short term, directional, and standing",
-        "short term, specific, and standing",
-        "long term, directional, and single use",
-        "long term, specific, and standing"
-      ], correctAnswer: 2 },
+  { id: "3-27", text: "______ plans apply to the entire organization and establish the organization's overall goals.", type: "multiplechoice", options: [
+    "Departmental", "Strategic", "Operational", "Long-term"
+  ], correctAnswer: 1 },
 
-      { id: "3-27", text: "______ plans apply to the entire organization and establish the organization's overall goals.", type: "multiplechoice", options: [
-        "Departmental", "Strategic", "Operational", "Long-term"
-      ], correctAnswer: 1 },
+  { id: "3-28", text: "Operational plans are usually ______.", type: "multiplechoice", options: [
+    "short term, directional, and standing",
+    "short term, specific, and standing",
+    "long term, directional, and single use",
+    "long term, specific, and standing"
+  ], correctAnswer: 1 },
 
-      { id: "3-28", text: "Operational plans are usually ______.", type: "multiplechoice", options: [
-        "short term, directional, and standing",
-        "short term, specific, and standing",
-        "long term, directional, and single use",
-        "long term, specific, and standing"
-      ], correctAnswer: 1 },
+  { id: "3-29", text: "Mr. Slabaugh wants to formulate a plan that lays out general guidelines for his employees and leaves room for interpretation. Which one of the following types of plans would best suit his requirement?", type: "multiplechoice", options: [
+    "Informal", "Specific", "Directional", "Standing"
+  ], correctAnswer: 2 },
 
-      { id: "3-29", text: "Mr. Slabaugh wants to formulate a plan that lays out general guidelines for his employees and leaves room for interpretation. Which one of the following types of plans would best suit his requirement?", type: "multiplechoice", options: [
-        "Informal", "Specific", "Directional", "Standing"
-      ], correctAnswer: 2 },
+  { id: "3-30", text: "Long-term plans are defined as those with a time frame beyond ______.", type: "multiplechoice", options: [
+    "seven years", "one year", "five years", "three years"
+  ], correctAnswer: 2 },
 
-      { id: "3-30", text: "Long-term plans are defined as those with a time frame beyond ______.", type: "multiplechoice", options: [
-        "seven years", "one year", "five years", "three years"
-      ], correctAnswer: 3 },
+  { id: "3-31", text: "Short-term plans are those covering ______ or less.", type: "multiplechoice", options: [
+    "three years", "one year", "six months", "five years"
+  ], correctAnswer: 1 },
 
-      { id: "3-31", text: "Short-term plans are those covering ______ or less.", type: "multiplechoice", options: [
-        "three years", "one year", "six months", "five years"
-      ], correctAnswer: 1 },
+  { id: "3-32", text: "______ plans are clearly defined and leave no room for interpretation.", type: "multiplechoice", options: [
+    "Directional", "Stated", "Long-term", "Specific"
+  ], correctAnswer: 3 },
 
-      { id: "3-32", text: "______ plans are clearly defined and leave no room for interpretation.", type: "multiplechoice", options: [
-        "Directional", "Stated", "Long-term", "Specific"
-      ], correctAnswer: 3 }
-    ]
+  { id: "3-33", text: "Todd Miller, CEO of Miller's Grocery, has determined that all stores should be well maintained both inside and out. This is an example of a ______.", type: "multiplechoice", options: [
+    "directional plan", "specific plan",
+    "financial goal", "social goal"
+  ], correctAnswer: 1 },
+
+  { id: "3-34", text: "A standing plan is ______.", type: "multiplechoice", options: [
+    "an ongoing plan that provides guidance for activities performed repeatedly",
+    "a plan that stands in place of a preferred plan in case of the failure of the latter",
+    "a one-time plan specifically designed to meet the needs of a unique situation",
+    "a flexible plan that sets out general guidelines for company strategy"
+  ], correctAnswer: 0 },
+
+  { id: "3-35", text: "Which one of the following is an example of a standing plan?", type: "multiplechoice", options: [
+    "A retail chain's plan to counter the entry of a new competitor.",
+    "A plan developed to address a sudden, unanticipated surge in demand.",
+    "A fire escape policy establishing practices to be followed in an emergency.",
+    "A plan to cope with radical changes in the political environment."
+  ], correctAnswer: 2 },
+
+  { id: "3-36", text: "When uncertainty is high, plans should be ______ and ______.", type: "multiplechoice", options: [
+    "specific; flexible",
+    "directional; standing",
+    "short-term; directional",
+    "general; informal"
+  ], correctAnswer: 2 },
+
+  { id: "3-37", text: "The commitment concept says that plans should ______.", type: "multiplechoice", options: [
+    "extend far enough to meet those commitments made when the plans were developed",
+    "be done for as long a time period as possible",
+    "be done for as short a time period as possible",
+    "not commit to specifically meeting the goals made when the plans were developed"
+  ], correctAnswer: 0 },
+
+  { id: "3-38", text: "In _____, goals set by top managers flow down through the organization and become subgoals for each organizational area.", type: "multiplechoice", options: [
+    "management by objectives",
+    "management by observation",
+    "traditional goal setting",
+    "traditional planning"
+  ], correctAnswer: 2 },
+
+  { id: "3-39", text: "_____ is a process of setting mutually-agreed upon goals and using those goals to evaluate employee performance.", type: "multiplechoice", options: [
+    "Management by objectives",
+    "Management by walking around",
+    "Management by observation",
+    "Management by exception"
+  ], correctAnswer: 0 },
+  { id: "3-40", text: "Environmental scanning refers to an organization's ________.", type: "multiplechoice", options: [
+    "social consciousness with regard to sustainability",
+    "adoption of tools to measure its carbon footprint",
+    "screening vast amounts of information to detect trends",
+    "ability to focus solely on potential political change."
+  ], correctAnswer: 2 }
+]
   },
+
+
+
+
+
+
+
   {
     id: 4,
     title: "Chapter 4: Organizing",
     questions: [
-      // True/False Questions (87-93)
+
       { id: "4-1", text: "Work specialization is also known as division of labor", type: "truefalse", correctAnswer: "true" },
       { id: "4-2", text: "Organizational structure is the formal chain of command of jobs within an organization.", type: "truefalse", correctAnswer: "false" },
       { id: "4-3", text: "Organizational design is the degree to which standardized procedures are in place in an organization.", type: "truefalse", correctAnswer: "false" },
