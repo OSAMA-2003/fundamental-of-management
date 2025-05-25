@@ -1,5 +1,15 @@
 import { ChapterData } from '../types';
 
+// Utility function to shuffle array
+function shuffleArray<T>(array: T[]): T[] {
+  const shuffled = [...array];
+  for (let i = shuffled.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+  }
+  return shuffled;
+}
+
 export const chapters: ChapterData[] = [
   {
     id: 1,
@@ -534,14 +544,13 @@ export const chapters: ChapterData[] = [
     ]
   }
 ];
-
 // Function to get all questions from all chapters
 export const getAllQuestions = () => {
-  return chapters.flatMap(chapter => chapter.questions);
+  return shuffleArray(chapters.flatMap(chapter => chapter.questions));
 };
 
 // Function to get questions for a specific chapter
 export const getChapterQuestions = (chapterId: number) => {
   const chapter = chapters.find(c => c.id === chapterId);
-  return chapter ? chapter.questions : [];
+  return chapter ? shuffleArray([...chapter.questions]) : [];
 };

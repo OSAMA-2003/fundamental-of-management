@@ -51,9 +51,9 @@ const ChapterSelection: React.FC<ChapterSelectionProps> = ({ onChapterSelect }) 
         initial={{ y: -20, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.5 }}
-        className="text-center mb-8 px-4"
+        className="text-center mb-8 px-4 gap md:pt-10 "
       >
-        <h1 className="text-3xl sm:text-4xl font-bold text-white mb-4 leading-tight">
+        <h1 className=" text-2xl md:text-3xl sm:text-4xl font-bold text-white mb-4 leading-tight">
           Management Fundamentals Revision
         </h1>
         

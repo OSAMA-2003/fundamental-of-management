@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { ArrowLeft, ArrowRight, Check } from 'lucide-react';
+import { ArrowLeft } from 'lucide-react';
 import { Question as QuestionType } from '../types';
 import Question from './Question';
 import ProgressBar from './ProgressBar';
@@ -33,9 +33,8 @@ const Quiz: React.FC<QuizProps> = ({ questions, onBack }) => {
     const newAnswers = [...userAnswers];
     newAnswers[currentQuestionIndex] = answer;
     setUserAnswers(newAnswers);
-  };
 
-  const goToNextQuestion = () => {
+    // Auto-advance to next question or complete quiz
     if (isLastQuestion) {
       setQuizCompleted(true);
     } else {
@@ -59,20 +58,12 @@ const Quiz: React.FC<QuizProps> = ({ questions, onBack }) => {
     setScore(correctAnswers);
   };
 
-  const handleRetake = () => {
-    setCurrentQuestionIndex(0);
-    setUserAnswers(Array(questions.length).fill(null));
-    setQuizCompleted(false);
-    setScore(0);
-    onBack();
-  };
-
   if (quizCompleted) {
     return (
       <Results 
         score={score} 
         totalQuestions={questions.length}
-        onRetake={handleRetake}
+        onRetake={onBack}
         questions={questions}
         userAnswers={userAnswers}
       />
@@ -97,7 +88,7 @@ const Quiz: React.FC<QuizProps> = ({ questions, onBack }) => {
         />
       </AnimatePresence>
       
-      <div className="flex justify-between mt-8 gap-4">
+      <div className="flex justify-start mt-8">
         <motion.button
           whileHover={{ scale: 1.02 }}
           whileTap={{ scale: 0.98 }}
@@ -111,30 +102,6 @@ const Quiz: React.FC<QuizProps> = ({ questions, onBack }) => {
         >
           <ArrowLeft className="w-5 h-5" />
           <span className="hidden sm:inline">Previous</span>
-        </motion.button>
-        
-        <motion.button
-          whileHover={{ scale: 1.02 }}
-          whileTap={{ scale: 0.98 }}
-          onClick={goToNextQuestion}
-          disabled={selectedAnswer === null}
-          className={`nav-button ${
-            selectedAnswer === null
-              ? "bg-blue-300 text-blue-100 cursor-not-allowed"
-              : "nav-button-primary"
-          }`}
-        >
-          {isLastQuestion ? (
-            <>
-              <span>Finish</span>
-              <Check className="w-5 h-5" />
-            </>
-          ) : (
-            <>
-              <span>Next</span>
-              <ArrowRight className="w-5 h-5" />
-            </>
-          )}
         </motion.button>
       </div>
     </motion.div>

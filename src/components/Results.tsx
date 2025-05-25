@@ -14,6 +14,7 @@ interface ResultsProps {
 const Results: React.FC<ResultsProps> = ({ 
   score, 
   totalQuestions, 
+  onRetake, 
   questions,
   userAnswers 
 }) => {
@@ -24,15 +25,16 @@ const Results: React.FC<ResultsProps> = ({
   let icon = <Award className="w-12 h-12 text-yellow-400" />;
   
   if (pointsBelow < 5) {
-    message = "عااااااااااش 🎉";
+    message = "🎉عااااااااااش ";
     icon = <Award className="w-16 h-16 text-yellow-400" />;
   } else if (pointsBelow >= 5 && pointsBelow <= 10) {
-    message = "محتاج تراجع شوية 📝";
+    message = "📝محتاج تراجع شوية ";
     icon = <BookOpen className="w-16 h-16 text-blue-400" />;
   } else {
-    message = "ارجع ذاااااااكر 📚";
+    message = "📚ارجع ذاااااااكر ";
     icon = <BookOpen className="w-16 h-16 text-red-400" />;
   }
+  
   
   const containerVariants = {
     hidden: { opacity: 0, scale: 0.9 },
@@ -92,7 +94,14 @@ const Results: React.FC<ResultsProps> = ({
         
         <div className="p-6">
           <div className="flex flex-col sm:flex-row gap-4 mb-6">
-            
+            <motion.button
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+              onClick={onRetake}
+              className="flex-1 py-3 px-6 bg-blue-500 text-white font-semibold rounded-lg flex items-center justify-center"
+            >
+              Back to Chapters
+            </motion.button>
             <motion.button
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}

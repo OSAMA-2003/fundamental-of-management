@@ -62,7 +62,7 @@ function App() {
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
                   onClick={handleBackToChapters}
-                  className="text-blue-100 hover:text-white mb-2 inline-flex items-center"
+                  className="text-blue-100 font-bold hover:text-white mb-2 inline-flex  "
                 >
                   ← Back to Chapters
                 </motion.button>
@@ -75,13 +75,12 @@ function App() {
       </div>
       <footer className="absolute bottom-0 left-0 right-0 py-4 text-center bg-blue-900 bg-opacity-50 backdrop-blur-sm">
         <a 
-          href="https://osama-ahmd-portfolio.vercel.app/" 
+          href="https://www.linkedin.com/in/osama-ahmed-250648245/" 
           target="_blank" 
           rel="noopener noreferrer" 
           className="text-blue-100 hover:text-white transition-colors duration-200"
         >
-                    Made By ENG:<span className=' font-bold font-sans underline '>OSAMA</span>
-
+          Made By ENG: <span className=' font-bold font-sans underline '>OSAMA</span>
         </a>
       </footer>
     </div>
